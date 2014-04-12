@@ -1,5 +1,5 @@
 <?php
-	require 'db.class.php';
+	require './../db.class.php';
 	$db = new DB();
 	session_start();
 		
