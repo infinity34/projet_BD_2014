@@ -1,10 +1,11 @@
 <?php
 	class DB{
 	
-		private $host = 'localhost';
-		private $username = 'root';
-		private $password = '';
-		private $database = 'tuto';
+		private $host = Serveur: '127.2.149.130:3306'
+		';
+		private $username = 'adminstDuUmd';
+		private $password = 'f8-lLGuUKgU4';
+		private $database = 'projet';
 		private $db;
 		
 		public function __construct($host =null, $username = null, $password = null, $database = null){
@@ -16,8 +17,8 @@
 		
 			try{
 				$this->db = new PDO('mysql:host='.$this->host.';dbname=' .$this->database, $this->username, $this->password,
-								array( PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8',
-									   PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
+								array( /*PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8',
+									   PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING*/
 									)
 								);
 			}catch(PDOException $e){
